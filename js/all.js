@@ -62,5 +62,11 @@ $(document).ready(function () {
     });
 
 
+    $('.dropdown-open>li>a').click(function (e) { 
+        e.preventDefault();
+        $(this).parent().find('.dropdown-open').slideToggle();
+        $(this).parent().siblings().find('.dropdown-open').slideUp();
+    });
+
 
 });

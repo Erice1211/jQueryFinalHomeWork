@@ -415,9 +415,17 @@ table {
 
 
 /* 將圖片固定在右下角 */
-.top{
+/* goTop */
+.goTop{
   position: fixed;
-  bottom: 0;
-  right: 0;
-
+  right: 15px;
+  bottom: 15px;
+  color: #a7cc00;
+  font-size: 50px;
+  display: block;
+  padding: 15px;
+  display: none;
+}
+.goTop:hover{
+  color: #aa1b1b;
 }

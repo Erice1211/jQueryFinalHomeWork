@@ -42,12 +42,24 @@ $(document).ready(function () {
         // },
     });
 
-    //lightbox的js設定
-    // lightbox.option({
-    //     'resizeDuration': 1000,
-    //     'wrapAround': true,
-    //     'imageFadeDuration': 1000,
-    // });
+    //goTop
+    function showBtnCondition() {
+        if ($(this).scrollTop() > 250) {
+            $('.goTop').fadeIn();
+        } else {
+            $('.goTop').fadeOut();
+        }
+    }
+
+    /*移動scrollbar開始跑函數*/
+    $(window).scroll(showBtnCondition);
+
+    $('.goTop').click(function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 500);
+    });
 
 
 

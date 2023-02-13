@@ -62,10 +62,10 @@ $(document).ready(function () {
     });
 
 
-    $('.dropdown-open>li>a').click(function (e) { 
+    $('.menu>li>a').click(function (e) { 
         e.preventDefault();
-        $(this).parent().find('.dropdown-open').slideToggle();
-        $(this).parent().siblings().find('.dropdown-open').slideUp();
+        $(this).parent().find('.dropdown-open').slideToggle();  /*被點選的判斷開或關*/
+        $(this).parent().siblings().find('.dropdown-open').slideUp(); /*被點選以外的其他選單要關掉*/
     });
 
 

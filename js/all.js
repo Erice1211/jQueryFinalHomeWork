@@ -62,6 +62,7 @@ $(document).ready(function () {
     });
 
 
+
     $('.menu>li>a').click(function (e) { 
         e.preventDefault();
         $(this).parent().find('.dropdown-open').slideToggle();  /*被點選的判斷開或關*/

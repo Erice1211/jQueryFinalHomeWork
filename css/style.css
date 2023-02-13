@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   清空瀏覽器預設樣式
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap
+{
+  margin:0 auto;
+  width: 1000px;
+}
+.header
+{
+
+  height: 30px;
+  background-color:#f6f6f6;
+}
+a
+{
+  text-decoration:none;
+}
+.facebook
+{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/facebookIcon.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-right:5px ;
+  border-right:1px solid #9c9c9c ;
+  margin: 5px;
+}
+
+.link ul
+{
+    display:flex;
+    justify-content:end;
+}
+
+.twitter
+{
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/twitterIcon.png);
+    background-repeat: no-repeat;
+  padding-left: 20px;
+  margin: 5px;
+  
+}
+
+.navigate h1
+{
+  width: 200px;
+  /* height: 100px; */
+  background-image:url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+  background-repeat:no-repeat;
+  text-indent:101%;
+  overflow:hidden; 
+  white-space:nowrap;
+}
+
+.navigate
+{
+  display:flex;
+  justify-content:space-between;
+}
+
+.navigate ul 
+{
+  display:flex;
+  text-align:center;
+
+}
+
+.navigate a
+{
+  color:#14cb9a;
+  padding: 20px ;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.navigate a:hover
+{
+  border-bottom:solid #14cb9a;
+}
+
+.content
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+
+/* .banner
+{
+  background-image: url(../img/banner.png);
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin-top: 10px;
+  padding-top: 30px;
+  line-height: 50px;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+.banner h2
+{
+  width: 100%;
+  line-height: 50px;
+  font-size: 30px;
+  color: white;
+ background-color: rgba(0, 0, 0, 0.5);
+ padding-left: 20px;
+  position: absolute;
+  bottom: 125px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} */
+
+.swiper{
+  height: 346px;
+  --swiper-navigation-color: #fff;
+  --swiper-navigation-size: 20px;
+  --swiper-theme-color: #fff;
+  position: relative;
+}
+.swiper h2{
+  width: 100%;
+  line-height: 50px;
+  font-size: 30px;
+  color: white;
+ background-color: rgba(0, 0, 0, 0.5);
+ padding-left: 20px;
+  position: absolute;
+  bottom: 125px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 2;  /*放到最上層*/
+}
+.swiper img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;
+  object-position: bottom; */
+}
+
+.course
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.course-item
+{
+  margin-top: 30px;
+  margin-bottom: 20px;
+   margin-right: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 5px 3px rgb(172, 172, 172);
+}
+.course-item3
+{
+  margin-top: 30px;
+  margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 5px 3px rgb(172, 172, 172);
+
+}
+
+.course-item h2
+{
+   text-align: center;
+   font-size: 25px;
+   margin-bottom: 20px;
+
+}
+
+.course p,.list
+{
+  line-height: 1.5;
+  margin-left: 5px;
+margin-right: 5px;
+}
+
+.course h2 {
+  font-size: 24px;
+  padding-bottom: 20px;
+  font-weight: bold;
+
+}
+
+.course h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+
+}
+
+.courseComp h1
+{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.courseComp th,.courseComp td
+{
+    width: 200px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+
+.courseComp th
+{
+   padding: 10px;
+   font-weight:bold;
+   background: #e0e0e0;
+}
+
+.courseComp td
+{
+   padding: 10px;
+   
+}
+
+.courseComp
+{
+
+    margin: 0 auto;
+    width: 840px;
+    margin-bottom: 50px;
+}
+
+.green
+{
+    color: #02c874;
+}
+
+.connection{
+  margin-bottom: 20px;
+  background: linear-gradient(#00694e,#009770);
+}
+.connection h2{
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+.formfomat 
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formfomat .form-left 
+{
+  padding-left: 40px;
+}
+
+*,*::before,*::after
+{
+  box-sizing: border-box;
+}
+
+.form-left textarea
+{
+  width: 450px;
+  height: 300px;
+  margin-bottom: 30px;
+
+}
+
+.form_right{
+	width: 450px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.form_right label
+{
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 6px;
+
+}
+
+.form_right .enter
+{
+	font-size: 12px;
+	margin-bottom: 20px;
+  height: 30px;
+  padding: 5px 0px 5px 10px; 
+  border: none;
+	width: 430px;
+	border-radius: 2px;
+	
+
+}
+
+.form_right .btn{
+	color: white;
+	background: #00CC99;
+	font-size: 10px;
+	width: 50px;
+	height: 26px;
+	margin-left: 380px;
+	border-radius: 2px;
+	border: none;
+}
+
+
+.footer
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a
+{
+  text-decoration: none;
+  color: red;
+}
+
+.footer-right
+{
+  line-height:1.5;
+}
+
+
+
+
+/* .menu > li{
+  float: left;
+  width: 100px;
+} */
+/* 讓訂單項目有下一層選單 */
+/* 下一層選單預設不展開 */
+.menu ul {
+  display: none
+}
+
+/* 當移到產品介紹時裡面的li，再把下一層的ul打開 */
+.menu > li:hover ul{
+  display: block
+}
+
+
+
+.swiper-slide.swiper-slide-active {
+  text-align: center ;
+}
+
+
+/* 將圖片固定在右下角 */
+.top{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+}
